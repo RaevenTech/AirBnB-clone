@@ -1,10 +1,11 @@
 import React from "react";
+import logo from "../assets/air-bnb-logo.png";
+import styles from "./navbar.module.css";
 
 const Navbar = () => {
     return (
         <nav>
-            <h1> navbar</h1>
-            <img src="../assets/airbnb1.png" alt="logo" />
+            <img src={logo} alt="logo" className={styles.nav_logo} />
         </nav>
     );
 };
