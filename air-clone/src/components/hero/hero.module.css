@@ -1,0 +1,22 @@
+.hero {
+    margin: 26px 77px 0px 77px;
+    
+}
+.hero_collage {
+    padding:20px 0px 10px 30px
+}
+.hero_title {
+    margin-top:5px;
+    font-weight: 700;
+    font-size: 56px;
+    margin-left: 50px;
+    margin-bottom: 16px;
+   
+}
+.subtitle {
+    max-width: 450px;
+    margin-left:50px;
+    font-weight: 300;
+    font-size: 23px;
+    margin-top: 0px;
+}
