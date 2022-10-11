@@ -3,6 +3,7 @@
     
 }
 .hero_collage {
+    max-width: 660px;
     padding:20px 0px 10px 30px
 }
 .hero_title {
