@@ -4,7 +4,7 @@ import styles from "./hero.module.css";
 
 const Hero = () => {
     return (
-        <section>
+        <section className={styles.section}>
             <div className={styles.hero}>
                 <img
                     src={collage}
