@@ -2,7 +2,16 @@
     margin: 50px 50px 0px 150px;
 }
 .image {
+    position: relative;
     margin-bottom: 0px;
+}
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 6px 3px 6px;
+    border-radius: 5%;
+    background-color: #FFFFFF;
 }
 .rating_info {
     display: flex;

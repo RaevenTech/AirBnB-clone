@@ -8,6 +8,7 @@ const Card = () => {
         <section className={styles.cards}>
             <div className={styles.image}>
                 <img src={katieZaferes} alt="Katie Zaferes" />
+                <badge className={styles.badge}>SOLD OUT</badge>
             </div>
             <div className={styles.rating_info}>
                 <img src={star} alt="Star" className={styles.star} />
