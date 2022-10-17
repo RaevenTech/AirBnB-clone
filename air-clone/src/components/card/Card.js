@@ -1,23 +1,38 @@
 import React from "react";
 import styles from "./card.module.css";
 import star from "../../assets/Star.png";
-//import katieZaferes from "../../assets/katie-zaferes.png";
 
 const Card = (props) => {
+    //console.log(props);
+    let badgeText;
+    if (props.card.openSpots === 0) {
+        badgeText = "SOLD OUT";
+    } else if (props.card.location === "Online") {
+        badgeText = "Online";
+    }
+
     return (
         <section className={styles.cards}>
             <div className={styles.image}>
-                <img src={props.img} alt="Katie Zaferes" />
-                <badge className={styles.badge}>SOLD OUT</badge>
+                {badgeText && (
+                    <badge className={styles.badge}>{badgeText}</badge>
+                )}
+                <img
+                    className={styles.img}
+                    src={props.card.coverImg}
+                    alt={props.card.title}
+                    width={250}
+                    height={355}
+                />
             </div>
             <div className={styles.rating_info}>
                 <img src={star} alt="Star" className={styles.star} />
-                <p className={styles.rating}>{props.rating}</p>{" "}
+                <p className={styles.rating}>{props.card.stats.rating}</p>{" "}
                 <p className={styles.gray_info}>
-                    ({props.reviewCount})-{props.country}
+                    ({props.card.stats.reviewCount})-{props.card.location}
                 </p>
             </div>
-            <p className={styles.title}>{props.title}</p>
+            <p className={styles.title}>{props.card.title}</p>
             <p className={styles.price_person}>
                 <span className={styles.price}>From ${props.price} </span> /
                 person

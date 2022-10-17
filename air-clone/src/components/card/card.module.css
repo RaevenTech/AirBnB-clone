@@ -1,9 +1,16 @@
 .cards {
-    margin: 50px 50px 0px 150px;
+    margin: 50px 0px 0px 0px;
+    
 }
 .image {
     position: relative;
     margin-bottom: 0px;
+    border-radius: 10px;
+}
+.img {
+    
+    margin-bottom: 0px;
+    border-radius: 10px;
 }
 .badge {
     position: absolute;
@@ -12,6 +19,7 @@
     padding: 5px 6px 3px 6px;
     border-radius: 5%;
     background-color: #FFFFFF;
+    z-index: 5;
 }
 .rating_info {
     display: flex;
