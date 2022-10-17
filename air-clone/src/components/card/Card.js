@@ -19,7 +19,7 @@ const Card = (props) => {
             </div>
             <p className={styles.title}>{props.title}</p>
             <p className={styles.price_person}>
-                <span className={styles.price}>From ${props.price}} </span> /
+                <span className={styles.price}>From ${props.price} </span> /
                 person
             </p>
         </section>
