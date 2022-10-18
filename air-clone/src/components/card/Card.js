@@ -14,9 +14,7 @@ const Card = (props) => {
     return (
         <section className={styles.cards}>
             <div className={styles.image}>
-                {badgeText && (
-                    <badge className={styles.badge}>{badgeText}</badge>
-                )}
+                {badgeText && <div className={styles.badge}>{badgeText}</div>}
                 <img
                     className={styles.img}
                     src={props.card.coverImg}
